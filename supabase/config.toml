@@ -1,1 +1,7 @@
 project_id = "rkbfxlnahnnvfvyuqrfa"
+
+[functions.shorten-url]
+verify_jwt = false
+
+[functions.redirect]
+verify_jwt = false
