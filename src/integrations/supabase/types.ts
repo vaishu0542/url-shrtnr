@@ -146,6 +146,36 @@ export type Database = {
         }
         Relationships: []
       }
+      urls: {
+        Row: {
+          click_count: number
+          created_at: string
+          created_by: string | null
+          id: string
+          original_url: string
+          short_code: string
+          updated_at: string
+        }
+        Insert: {
+          click_count?: number
+          created_at?: string
+          created_by?: string | null
+          id?: string
+          original_url: string
+          short_code: string
+          updated_at?: string
+        }
+        Update: {
+          click_count?: number
+          created_at?: string
+          created_by?: string | null
+          id?: string
+          original_url?: string
+          short_code?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
